@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+htm, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 1.8em;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 1.5em;
+    color: white;
+}
+
+/* Nav (Exibição do Produto)  */
+.produto {
+    display: flex;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.produto-imagem {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.infor-produto {
+    padding: 20px;
+}
+
+.nome-produto {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.descr-produto {
+    margin: 10px 0;
+    color: #666;
+}
+
+.preco-produto {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #333;
+}
+
+.botao-produto {
+    background-color: #333;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.6em;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.botao-produto:hover {
+    background-color: #555;
+}
+
+
+/*Footer Rodapé*/
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

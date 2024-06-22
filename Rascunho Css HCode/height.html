@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height - Altura </title>
+
+    <style>
+
+        body {
+            height: 50vh; /*Pai - na div filho posso por no height a % da tela */
+        }
+
+        div {
+            background-color: red;
+            width: 195px;
+            height: 50%; /*Essa relação fica 25vh com relação ao pai, no caso do body na linha 11*/
+            
+            /* height: 100%; Esses valor não funcionam no Css caso ela não tiver a tag pai(exemplo:body). Por causa do DOCTYPE html  % - Pega 100% da área disponivel. Ele so iria funcionar causa colocasse texto no html. Exemplo: Seja BEM VINDO e se der quebra de texto <br/> ele continua automaticamente criando de acordo com o texto.  <div>*/
+            /* height: 100vh; Esse valor parece que é igual o de cima, mas não é.*/
+        }
+    </style>
+</head>
+<body>
+
+    <div>olollljljljljljljjjlljljljl <br>jijiji</div>
+
+    <!--
+                     Propriedade de define Altura -Height
+
+        Define a altura dos elementos. O que não inclui as margens, bordas e espaçamentos.
+
+        Permite herança explicita, uma vez definida a altura do elemento pai, é possível herdar o elemento filho.
+
+        Obs: As propriedades max-heighte min-height quando presentes, sobrescrevem a propriedade height.
+
+        Valores Possíveis -  auto| length| initial| inherit (unidade de medida - length).
+        Valor Padrão - auto
+        Valor Herdado - não
+    -->
+</body>
+</html>

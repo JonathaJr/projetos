@@ -1,0 +1,33 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem; /* 1rem equivale a 16px */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.content--add--item {
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.content--body {
+    
+}

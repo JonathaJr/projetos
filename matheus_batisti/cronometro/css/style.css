@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+*{
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Honk', system-ui,sans-serif;
+}
+
+.container {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2rem;
+   padding-top: 3rem;
+   background-color: #f1f1f1;
+}
+
+.timer {
+   display: flex;
+   font-size: 100px;
+   font-weight: bold;
+}
+
+.time {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 15px;
+   min-width: 90px;
+}
+
+.separator {
+  padding: 0 10px;
+}
+
+#milliseconds {
+   font-size: 70px;
+}
+
+.buttons {
+   display: flex;
+   gap: 1rem;
+}
+
+.btn {
+   padding: 10px 20px;
+   font-size: 18px;
+   border-radius: 30px;
+   cursor: pointer;
+   border: 1px solid #ccc;
+   transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+   transform: scale(1.1);
+}
+
+#startBtn {
+   background-color: #1f449b59;
+}
+
+#pauseBtn, 
+#resumeBtn {
+   display: none;
+}
+

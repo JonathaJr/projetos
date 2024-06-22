@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widht - Largura</title>
+</head>
+
+    <style>
+        * {margin: 50px; padding: 0;}
+
+        .fundos {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .fundos > div[class^=largura] {
+            border-style: solid;
+            border-width: 2px;
+            margin-bottom: 2%;
+            height: 40px;
+            overflow: hidden;
+        }
+
+        .largura-auto {
+            width: auto;
+            border-color: #00598daa;
+        }
+
+        .largura-vwvh {
+            width: 50vw;
+            border-color: #008d44aa;
+        }
+
+        .largura-percent {
+            width: 50%;
+            border-color: #3b6767aa;
+        }
+
+        .largura-pixel {
+            width: 350px;
+            border-color: #c82aaeaa;
+        }
+
+        .largura-fit {
+            width: fit-content;
+            border-color: #c2f01caa;
+        }
+
+        .largura-min {
+            width: min-content;
+            border-color: #2ac3c8aa;
+        }
+
+        .largura-max {
+            width: max-content;
+            border-color: #7c2ac8aa;
+        }
+
+        .largura-revert {
+            width: revert;
+            border-color: #c82a2aaa;
+        }
+
+        .largura-unset {
+            width: unset;
+            border-color: #57c82aaa;
+        }
+    </style>
+<body>
+    
+
+        <div class="fundos">
+
+            <div class="largura-auto">
+                AUTO: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatibus ab odit dolorum! Qui eaque itaque sapiente facilis temporibus pariatur unde ratione porro ipsam! Assumenda consequatur incidunt at sed repellendus.
+            </div>
+
+            <div class="largura-vwvh">
+                VH VW: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatibus ab odit dolorum! Qui eaque itaque sapiente facilis temporibus pariatur unde ratione porro ipsam! Assumenda consequatur incidunt at sed repellendus.
+            </div>
+
+            <div class="largura-percent">
+                Percent: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatibus ab odit dolorum! Qui eaque itaque sapiente facilis temporibus pariatur unde ratione porro ipsam! Assumenda consequatur incidunt at sed repellendus.
+            </div>
+
+            <div class="largura-pixel">
+                PIXEL: Lorem ipsum dolor sit amet consectetur adipisicing elit. .
+            </div>
+
+            <div class="largura-fit">
+                FIT: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </div>
+
+            <div class="largura-max">
+                MAX: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </div>
+
+            <div class="largura-min">
+                MIN: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </div>
+
+            <div class="largura-revert">
+                REVERT: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </div>
+
+            <div class="largura-unset">
+                UNSET: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </div>
+        </div>
+
+        <!--
+        Widht
+
+        Define a largura dos elementos. O que não inclui as margens, bordas e espaçamentos.
+
+        OBS: As propriedades max-width e min-widht quando presentes, sobrescrevem a propriedade Widht.
+
+        Valores Possíveis - auto | lenght | fit-content | initial | inherit | max-content|  min-content | revert | unset.
+        Valor Padrão - auto
+        Valor Herdado - não 
+    -->
+</body>
+</html>

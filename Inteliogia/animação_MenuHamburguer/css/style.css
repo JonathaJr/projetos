@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 4px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.linha {
+    display: block;
+    background-color: #4d31317a;
+    width: 200px;
+    height: 10px;
+    margin: 30px auto;
+    position: relative;
+    transform-origin: center;
+    transition: 0.2s;
+}
+
+button.ativar {
+    border: 4px solid red;
+
+}
+
+button.ativar .linha:nth-child(1) {
+    transform: translateY(36px) rotate(-45deg);
+    background-color: red;
+}
+
+button.ativar .linha:nth-child(3) {
+    transform: translateY(-36px) rotate(45deg);
+    background-color: red;
+}
+
+button.ativar .linha:nth-child(2) {
+    opacity: 0;
+}

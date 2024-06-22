@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+}
+
+fieldset {
+    border: 3px solid dodgerblue;
+}
+
+legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+}
+
+
+
+
+

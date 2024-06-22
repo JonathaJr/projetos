@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max-Width Largura Máxima de um Elemento</title>
+</head>
+
+    <style>
+        body {margin: 0; padding: 0;}
+        .container {
+            background-color: red;
+            width: 100%;
+            height: 20vh;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .item {
+            background-color: #4cd13780;
+            max-width: 700px;
+            height: 10vh;
+        }
+
+    </style>
+
+<body>
+    <!--
+        MAX_WIDHT
+
+        Define a largura máxima do elemento.
+
+        Se o contéudo for maior que a largura máxima, ele mudará automaticamente a altura do elemento.
+
+        se o contéudo for menor que a largura máxima, a propriedade não terá efeito.
+
+        Valores Possíveis -  none | length | max-content | min-content | fit-content(lenght)| unset | initial | inherit
+        Valor Padrão - none
+        Valor Herdado - não 
+
+    -->
+
+    <div class="container">
+
+        <div class="item"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit voluptas accusamus dolor sunt, ratione sit ex veritatis dolore delectus animi dolorum ut, obcaecati sequi voluptates! Ipsum deleniti beatae commodi porro! </div>
+
+    </div>
+
+</body>
+</html>

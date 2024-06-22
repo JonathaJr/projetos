@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #ffff;
+}
+
+body {
+    background-color: #DAF0FF;
+    height: 100vh;  
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 375px;
+    height: 568px;
+    border-radius: 39px;
+    background: linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    padding: 20px;
+
+}
+
+p {
+    font-size: 48px;
+}

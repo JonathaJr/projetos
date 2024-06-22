@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #7f00ff 0%, #e100ff 100%);
+}
+
+#botao-adicionar {
+    background: #8052ec;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    padding: 0 15px;
+    color: #ffffff;
+    font-size: 17px;
+    cursor: pointer;
+    float: right;
+    font-weight: 700;
+}
+
+#botao-adicionar:hover {
+    opacity: 0.8;
+}
+
+#botao-adicionar:active {
+    opacity: 0.6;
+}
+
+.container {
+    background-color: #ffffff;
+    max-width: 541px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+}
+
+#input-principal {
+    width: 342px;
+    height: 40px;
+    border: 2px solid rgba(209, 211, 212, 0.4);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#tarefas {
+    width: 100%;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.item-tarefa {
+    background: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px 45px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+
+.nome-tarefa{
+    color: #000000;
+    font-size: 15px;
+}
+

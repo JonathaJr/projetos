@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin-Left</title>
+</head>
+
+<style> 
+    body {
+        margin: 0; 
+        padding: 0;
+        background-color: red;
+        height: 100vh;
+
+        display: flex;
+    }
+
+    .bloco {
+        background-color: blue;
+        width: 20vw;
+        height: 20vw;
+       /* margin-left: 2vw;  10% do quadrado*/
+    }
+
+    .bloco:first-child { /* first-child - Pega o primeiro filho*/
+        /* margin-left: unset; */
+        /* margin-left: initial; */
+        /* margin-left: 0; */
+    }
+
+    .bloco + .bloco  { /* Irmãos - Essa propriedade passa a valer depois do segundo bloco*/
+        margin-left: 2vw; /* 10% do quadrado*/ 
+    }
+</style>
+
+<body>
+    <!--
+        Margin-Left
+
+        Esta propriedade CSS define o espaçamento do lado esquerdo do elemento, fora de qualquer borda definida. 
+
+        Valores Possíveis - lenght | auto | initial | inherit 
+        Valores Padrão - 0
+        Valor Herdado - não 
+    -->
+
+    <div class="bloco">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="bloco">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="bloco">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+</body>
+</html>

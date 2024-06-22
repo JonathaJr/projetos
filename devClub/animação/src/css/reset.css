@@ -1,0 +1,22 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    /* list-style: none. Exclui todas as bolinhas das listas*/
+    list-style: none;
+}
+
+button {
+    outline: none;
+}

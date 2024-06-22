@@ -1,0 +1,33 @@
+
+/*Media Query para Celulares*/
+@media (max-width: 1024px){
+    .cabecalho {
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px 0;
+        gap: 15px;
+    }
+
+    .cabecalho .menu li a {
+        padding: 15px;
+    }
+
+    .home .informacoes {
+        padding: 30px;
+    }
+
+    .home .informacoes img {
+        max-width: 100px;
+    }
+
+    .home .informacoes .titulo {
+        font-size: 40px;
+    }
+
+    .compre-ja .cartao {
+        width: 70%;
+    }
+}
+
+/*Mdeia Query para Tablets*/
+

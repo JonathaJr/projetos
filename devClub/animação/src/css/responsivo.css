@@ -1,0 +1,45 @@
+@media(max-width: 760px) {
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        overflow-y: auto;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .column-2 {
+        margin-bottom: 30px;
+    }
+
+    .color-box {
+        transform: translateX(70px);
+    }
+
+    #menu-list {
+        position: relative;
+        top: 60px;
+        left: 60px;
+        overflow: hidden;
+        transition: all 0.8s ease-in-out;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-li {
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+@keyframes moveController {
+    from {
+        transform: translate(-5%, -5%) rotate(-5deg);
+    }
+}

@@ -6,12 +6,20 @@
     <title>Formulário</title>
 </head>
 <body>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!--Pode usar p ou div-->
         <p><label for="inome">Nome:</label> 
-            <input type="text" name="nome" id="inome"></p>
+            <input type="text" name="nome" id="inome" required placeholder="nome do úsuario"></p>
+
         <p><label for="isobrenome">Sobrenome:</label> 
-            <input type="text" name="sobrenome" id="isobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+            <input type="text" name="sobrenome" id="isobrenome" required></p>
+
+        <p><label for="isenha">Senha:</label>
+            <input type="password" name="Senha" id="isenha" required placeholder="minímo 8 letras/números"></p>
+
+        <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
 </body>
 </html>

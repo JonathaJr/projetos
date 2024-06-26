@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
     <form action="cadastro.php" method="post" autocomplete="off">
         <!--Pode usar p ou div-->
-        <p><label for="inome">Nome:</label> 
-            <input type="text" name="nome" id="inome" required placeholder="nome do úsuario"></p>
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required placeholder="nome do úsuario">
+        </p>
+        <br>
 
-        <p><label for="isobrenome">Sobrenome:</label> 
-            <input type="text" name="sobrenome" id="isobrenome" required></p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome" required>
+        </p>
+        <br>
 
-        <p><label for="isenha">Senha:</label>
-            <input type="password" name="Senha" id="isenha" required placeholder="minímo 8 letras/números"></p>
+        <p>
+            <label for="dnascimento">Data de Nascimento:</label>
+            <input type="date" name="Nascimento" id="dnascimento">
+        </p>
+        <br>
 
-        <p><input type="submit" value="Enviar">
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="Senha" id="isenha" required placeholder="minímo 8 letras/números">
+        </p>
+        <br>
+        
+        <p>
+            <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+
     </form>
 </body>
+
 </html>

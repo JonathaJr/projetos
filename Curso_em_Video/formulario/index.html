@@ -10,30 +10,52 @@
 <body>
     <form action="cadastro.php" method="post" autocomplete="off">
         <!--Pode usar p ou div-->
-        <p>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required placeholder="nome do úsuario">
-        </p>
-        <br>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required placeholder="nome do úsuario">
+            </p>
+            <br>
+            <p>
+                <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome" required>
+            </p>
+            <br>
+            <p>
+                <label for="dnascimento">Data de Nascimento:</label>
+                <input type="date" name="Nascimento" id="dnascimento" required>
+            </p>
+            <br>
+            <p>
+                <label for="gsexo">Sexo:</label>
+                <input type="radio" name="genero" id="gfeminino" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" id="gmasculino" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="goutro" value="outro" required>
+                <label for="outro">Outro</label>
+            </p>
+            <br>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <br>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" required autocomplete="tel" pattern="^[0-9]{4}-[0-9]$"
+                    placeholder="(99)9999-9999"> <!--Expressões Regulares RegEx-->
+            </p>
+            <br>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="Senha" id="isenha" required placeholder="minímo 8 letras/números">
+            </p>
+            <br>
 
-        <p>
-            <label for="isobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="isobrenome" required>
-        </p>
-        <br>
+        </fieldset>
 
-        <p>
-            <label for="dnascimento">Data de Nascimento:</label>
-            <input type="date" name="Nascimento" id="dnascimento">
-        </p>
-        <br>
-
-        <p>
-            <label for="isenha">Senha:</label>
-            <input type="password" name="Senha" id="isenha" required placeholder="minímo 8 letras/números">
-        </p>
-        <br>
-        
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">

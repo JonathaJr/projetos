@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(72deg, #1a397b 35%, #a0afe2, #597df1 99%);
+
+    .content {
+        height: 520px;
+        width: 935px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+
+        input { /* codigo 40 a 53 voltou para esse  */
+            display: none;
+        }
+    }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        
+
+    .navigation {
+        position: absolute;
+        bottom: 10px;
+        left: 600px;
+        display: flex;
+
+        .bar {
+            width: 15px;
+            height: 15px;
+            border: 2px solid white;
+            margin: 6px;
+            border-radius: 15px;
+            cursor: pointer;
+            transform: .5s ease;
+        }
+
+        .bar:hover {
+            background-color: white;
+        }
+    }
+}
+
+
+

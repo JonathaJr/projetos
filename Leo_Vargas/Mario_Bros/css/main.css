@@ -1,0 +1,26 @@
+main {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1440px;
+
+    .main__info {
+        width: 100%;
+        max-width: 570px;
+    }
+
+    p {
+        font-size: 1em;
+        margin: 20px 0 28px;
+    }
+
+}
+
+.main__info div {
+    display: flex;
+    column-gap: 32px;
+}

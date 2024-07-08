@@ -20,6 +20,43 @@
 </head>
 <body>
   
+  <div class="card">
+    <form action="ilocal">
+      <div>
+        <i class="ph ph-map-pin"></i>
+        <input type="text" name="localização" id="ilocal" placeholder="Digite a Localização: ">
+      </div>
+
+      <button type="submit">
+        <i class="ph ph-magnifying-glass"></i>
+      </button>
+    </form>
+
+    <main>
+      <img id="icon-weather" src="" alt="">
+      <h1 id="temperature">-2°c</h1>
+      <h2 id="local">Presidente Prudente</h2>
+    </main>
+
+    <footer>
+      <div class="block">
+        <i class="ph ph-drop-half-bottom"></i>
+      </div>
+      <div class="block">
+        <strong id="humidity">78%</strong>
+        <p>Umidade</p>
+      </div>
+
+      <div class="block">
+        <i class="ph ph-wind"></i>
+      </div>
+      <div class="block">
+        <strong id="speed-wind"> 8 km/h</strong>
+        <p>Velocidade Vento</p>
+      </div>
+    </footer>
+  </div>
+
   <script src="./index.js"></script>
 </body>
 </html>

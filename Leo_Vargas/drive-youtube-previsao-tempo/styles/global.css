@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --border: rgba(255, 255, 255, 0.5);
+}
+
+body, button, a, input {
+  color: #fff;
+  font: 400 1rem "Poppins", sans-serif;
+}

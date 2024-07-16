@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Click</title>
+
+    <style>
+        #area {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            margin: 80px auto;
+            font-size: 1.6em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            cursor: pointer;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area"> <!-- onclick="clicar()" onmouseenter="entrar()" onmouseout="sair() "A melhor forma de escrever é sendo pelo JavaScript por addEventListerner -->
+        intereja
+    </div>
+
+    <script>
+
+        let a = document.querySelector('#area');
+        a.addEventListener('click', clicar);
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerHTML = 'Clicou!';
+            a.style.background = 'red';
+        }
+
+        function entrar() {
+            a.innerHTML = 'Entrou!';
+        }
+
+        function sair() {
+            a.innerHTML = 'Saiu!';
+            a.style.background = 'green';
+        }
+    </script>
+</body>
+
+</html>

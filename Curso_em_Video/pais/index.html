@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origem do País</title>
+</head>
+<body>
+    <h1>Sistema de Origem</h1>
+    <p>Em que país você mora: <input type="text" name="txtorigem" id="txtorigem"></p> 
+    <input type="button" value="verificar" onclick="verificar()">
+
+    <script>
+        function verificar() {
+            var txtpais = document.querySelector('#txtorigem');
+        
+            txtpais.innerHTML = `Vivendo em ${txtpais}`;
+        }
+        
+
+    </script>
+</body>
+</html>

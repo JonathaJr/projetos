@@ -26,20 +26,23 @@ function verificar() {
                 img.src = 'img/fotoadulto-h.png'
             } else {
                 //Idoso
+                img.src = 'img/fotoidoso-h.png'
             }
         } else if (fsex[1].checked){
             genero = 'Mulher';
             if(idade <= 10){
                 //Criança
+                img.setAttribute('src', 'img/fotocrianca-m.png')
         
             } else if( idade <= 21){
                 // Jovem
-                
+                img.setAttribute('src', 'img/fotojovem-m.png')
             } else if(idade <= 40) {
                 //Adulto
-            
+                img.src = 'img/fotoadulto-m.png'
             } else {
                 //Idoso
+                img.src = 'img/fotoidoso-m.png'
             }
         }
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.`

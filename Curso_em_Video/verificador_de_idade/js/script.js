@@ -39,7 +39,7 @@ function verificar() {
                 img.setAttribute('src', 'img/fotojovem-m.png')
             } else if(idade <= 40) {
                 //Adulto
-                img.src = 'img/fotoadulto-m.png'
+                img.src = 'img/fotoadulto-m.png' 
             } else {
                 //Idoso
                 img.src = 'img/fotoidoso-m.png'

@@ -12,34 +12,30 @@
     <title>Tocador de Música</title>
   </head>
   <body>
-    <header>
-      <h1>Player de música</h1>
-    </header>
-
-    <div>
-      <img src="images/cant_hide.webp" alt="Capa do disco" /> 
+    <div class="music-container">
+      <header>
+        <h1>Player de música</h1>
+        <img src="./images/as_you_were.webp" alt="Capa do disco" />
+      </header>
+      
+      <section>
+        <div class="below-cover">
+          <ul class="info-musi">
+            <li>Nome da Música</li>
+            <li>Nome da Banda</li>
+          </ul>
+          <li class="like"><i class="bi bi-heart"></i></li>
+        </div>
+        <!--Barra de Progresso-->
+        <div>Barra de progresso</div>
+        <div class="buttom-container">
+            <li class="shuffle"><i class="bi bi-shuffle"></i></li>
+            <li class="previous"><i class="bi bi-skip-start-circle"></i></li>
+            <li class="play"><i class="bi bi-play-circle"></i><i class="bi bi-pause-circle"></i></li>
+            <li class="next"><i class="bi bi-skip-end-circle"></i></li>
+            <li class="repeat"><i class="bi bi-repeat"></i></li>
+        </div>
+      </section>
     </div>
-
-    <section>
-      <div>
-        <ul>
-          <li>Nome da Música</li>
-          <li>Nome da Banda</li>
-          <li><i class="bi bi-heart"></i></li>
-        </ul>
-      </div>
-      <!--Barra de Progresso-->
-      <div>Barra de progresso</div>
-
-      <div>
-        <ul>
-          <li><i class="bi bi-shuffle"></i></li>
-          <li><i class="bi bi-skip-start-circle"></i></li>
-          <li><i class="bi bi-play-circle"></i><i class="bi bi-pause-circle"></i></li>
-          <li><i class="bi bi-skip-end-circle"></i></li>
-          <li><i class="bi bi-repeat"></i></li>
-        </ul>
-      </div>
-    </section>
   </body>
 </html>

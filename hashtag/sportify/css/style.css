@@ -27,7 +27,7 @@ body {
         h1 {
             color: white;
             text-align: center;
-            padding: 60px;
+            padding: 20px;
         }
 
         img {
@@ -37,20 +37,19 @@ body {
 
     section {
         .below-cover {
-            background-color: red;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            margin-top: 30px;
+            margin-top: 15px;
 
             .like {
                 font-size: 1.5em;
+                color: #1e2129;
             }
         }
 
         .buttom-container {
-            background-color: blue;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -62,6 +61,30 @@ body {
             }
         }
 
+        .song-name {
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+
+        .band-name {
+            color: #1e2129;
+            margin-bottom: 15px;
+        }
+
+        .progress-bar {
+            background-color: #1e2129; 
+            height: 3px;
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .current-progress {
+            background-color: white;
+            height: inherit;
+            width: 50%;
+            border-radius: inherit;
+        }
     }
     
 }

@@ -1,94 +1,93 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 body {
-    height: 100vh;
-    background: linear-gradient(90deg,
-    #95A0BF,
-    #6D758C,
-    #313540);
-    font-family: sans-serif;
-    color: white;
+  height: 100vh;
+  background: linear-gradient(90deg, #95a0bf, #6d758c, #313540);
+  font-family: sans-serif;
+  color: white;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    .music-container {
-        margin-top: 20px;
-    }
-    
+  button {
+    background-color: inherit;
+    border: none;
+    color: inherit;
+  }
 
-    header {
-        h1 {
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+  .music-container {
+    margin-top: 20px;
+  }
 
-        img {
-            width: 450px;
-        }
+  header {
+    h1 {
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
 
-    section {
-        .below-cover {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 15px;
-
-            .like {
-                font-size: 1.5em;
-                color: #1e2129;
-            }
-        }
-
-        .buttom-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            font-size: 1.5em;
-
-            .previous, .play, .next{
-                font-size: 2em;
-                font-weight: 300;
-            }
-        }
-
-        .song-name {
-            font-size: 1.5em;
-            font-weight: bolder;
-        }
-
-        .band-name {
-            color: #1e2129;
-            margin-bottom: 15px;
-        }
-
-        .progress-bar {
-            background-color: #1e2129; 
-            height: 3px;
-            width: 100%;
-            border-radius: 15px;
-            margin-bottom: 15px;
-        }
-
-        .current-progress {
-            background-color: white;
-            height: inherit;
-            width: 50%;
-            border-radius: inherit;
-        }
+    img {
+      width: 450px;
     }
-    
+  }
+
+  section {
+    .below-cover {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+
+      .like {
+        font-size: 1.5em;
+        color: #1e2129;
+      }
+    }
+
+    .buttom-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 1.5em;
+
+      .previous,
+      .play,
+      .next {
+        font-size: 2em;
+        font-weight: 300;
+      }
+    }
+
+    .song-name {
+      font-size: 1.5em;
+      font-weight: bolder;
+    }
+
+    .band-name {
+      color: #1e2129;
+      margin-bottom: 15px;
+    }
+
+    .progress-bar {
+      background-color: #1e2129;
+      height: 3px;
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .current-progress {
+      background-color: white;
+      height: inherit;
+      width: 50%;
+      border-radius: inherit;
+    }
+  }
 }
-
-
-
-

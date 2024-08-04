@@ -16,6 +16,7 @@
       <header>
         <h1>Player de música</h1>
         <img src="./images/as_you_were.webp" alt="Capa do disco" />
+        <audio class="audio" src="./songs/as_you_were.mp3"></audio>
       </header>
       
       <section>
@@ -24,7 +25,7 @@
             <li class="song-name">Nome da Música</li>
             <li class="band-name">Nome da Banda</li>
           </ul>
-          <li class="like"><i class="bi bi-heart"></i></li>
+          <button class="like"><i class="bi bi-heart"></i></button>
         </div>
 
         <!--Barra de Progresso-->
@@ -33,13 +34,16 @@
         </div>
         
         <div class="buttom-container">
-            <li class="shuffle"><i class="bi bi-shuffle"></i></li>
-            <li class="previous"><i class="bi bi-skip-start-circle"></i></li>
-            <li class="play"><i class="bi bi-play-circle"></i><i class="bi bi-pause-circle"></i></li>
-            <li class="next"><i class="bi bi-skip-end-circle"></i></li>
-            <li class="repeat"><i class="bi bi-repeat"></i></li>
+            <button class="shuffle"><i class="bi bi-shuffle"></i></button>
+            <button class="previous"><i class="bi bi-skip-start-circle"></i></button>
+            <button class="play"><i class="bi bi-play-circle"></i><i class="bi bi-pause-circle"></i></button>
+            <button class="next"><i class="bi bi-skip-end-circle"></i></button>
+            <button class="repeat"><i class="bi bi-repeat"></i></button>
         </div>
       </section>
     </div>
+
+    <script src="./js/script.js"></script>
+
   </body>
 </html>

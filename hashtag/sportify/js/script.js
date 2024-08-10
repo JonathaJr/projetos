@@ -6,7 +6,7 @@ songName.innerHTML = 'As You Were';
 
 
 function playSong() {
-    play.querySelector('.bi bi-play-circle');
+    play.querySelector('.bi').classList.remove('bi-play-circle-fill');
     song.play();
 }
 

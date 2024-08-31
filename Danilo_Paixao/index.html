@@ -31,22 +31,25 @@
         <li><a href="#">Teach Specs</a></li>
         <li><a href="#">Reviews</a></li>
         <li><a href="#">Contact Us</a></li>
-      </ul> <!--Navegação-->
+      </ul>
+      <!--Navegação-->
 
       <div class="header-icons">
-        <i class='bx bx-cart-add'></i>
-        <div id="menu"><i class='bx bx-menu'></i></div>
+        <i class="bx bx-cart-add"></i>
+        <div id="menu"><i class="bx bx-menu"></i></div>
       </div>
     </header>
 
     <section class="home">
       <div class="home-img">
-        <img class="img" src="./img/product1.png">
+        <img class="img" src="./img/product1.png" />
       </div>
 
       <div class="home-text">
-
-        <h1>Wireless <br> Headphones</h1>
+        <h1>
+          Wireless <br />
+          Headphones
+        </h1>
         <h2>The smarter way to listen</h2>
         <h3>$199.00</h3>
         <a href="#" class="btn">Shop Now</a>
@@ -55,18 +58,30 @@
 
     <div class="main">
       <div class="row1">
-        <li><img src="./img/main1.png" onclick="slider('product1.png')"></li>
+        <li><img src="./img/main1.png" onclick="slider('product1.png')" /></li>
       </div>
 
       <div class="row2">
-        <li><img src="./img/main2.png" onclick="slider('product2.png')"></li>
+        <li><img src="./img/main2.png" onclick="slider('product2.png')" /></li>
       </div>
 
       <div class="row3">
-        <li><img src="./img/main3.png" onclick="slider('product3.png')"></li>
+        <li><img src="./img/main3.png" onclick="slider('product3.png')" /></li>
       </div>
     </div>
 
+    <script>
+      function slider (anything){
+          document.querySelector ('.one') .src = anything;
+      };
 
+     let menu = document.querySelector ('#menu-icon');
+     let navbar = document.querySelector ('.navbar');
+
+     menu.onclick = () => {
+      menu.classList.toggle ('bx-x');
+      navbar.classList.toggle ('open');
+     }
+  </script>
   </body>
 </html>

@@ -1,0 +1,57 @@
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lightgray;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 2em;
+    text-align: center;
+}
+
+input {
+    height: 40px;
+    border: 2px solid blueviolet;
+    background: transparent;
+    color: white;
+    outline: none;
+    width: 70%;
+}
+
+button {
+    border: none;
+    height: 44px;
+    background-color: blueviolet;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer; 
+    transition: 0.5s;
+    width: 28%;
+}
+button:hover {
+    background-color: rgba(150, 40, 253, 0.74);
+}
+
+button:active {
+    background-color: rgb(44, 32, 54);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #4a148c;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 4px;
+    color:white;
+}
+

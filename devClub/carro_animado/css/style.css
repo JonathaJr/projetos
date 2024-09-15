@@ -25,6 +25,7 @@ header {
   grid-template-columns: 1fr 600px;
   gap: 10%;
   z-index: 2;
+  font-family: "Poppins", sans-serif;
 
   img {
     width: 250px;
@@ -41,46 +42,150 @@ header {
 /*  Section  */
 
 section {
-    background-image: radial-gradient(#000, #fff);
-    height: 100vh;
+  background-image: radial-gradient(#000, #fff);
+  height: 100vh;
+  position: relative;
+
+  .list {
+    width: 70vw;
+    height: 100%;
+    margin: auto;
     position: relative;
 
-    .list {
-        width: 70vw;
-        height: 100%;
-        margin: auto;
-        position: relative;
+    .item {
+      position: absolute;
+      inset: 0;
 
-        .item {
-            position: absolute;
-            inset: 0;
+      .car-img {
+        position: absolute;
+        top: 50%;
+        right: 26%;
+        transform: translateY(-50%);
+        width: 80%;
+
+        img {
+          width: 100%;
+          transform: rotate(-30deg);
+        }
+      }
+
+      .content {
+        position: absolute;
+        right: -24px;
+        width: 74%;
+        height: 111%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        gap: 20px;
+
+        h2 {
+          font-weight: bold;
+          font-size: 3em;
+          line-height: 1em;
+          font-family: "Poppins", sans-serif;
         }
 
-        .car-img {
-            
-            position: absolute;
-            top: 74%;
-            transform: translateY(-50%);
-            width: 70%;
-
-            img {
-               
-                width: 100%;
-                transform: rotate(-10deg);
-            }
+        .description {
+          color: #e6e5e5;
+          font-size: 1em;
+          text-align: justify;
+          text-indent: 20px;
+          max-width: 400px;
         }
-    }
 
-
-
-
-    /* Setas */
-    .arrows {
         button {
-            img {
-                background-color: yellow;
-                width: 100px;
-            }
+          background-color: #beff1b;
+          border-radius: 30px;
+          height: 35px;
+          width: 120px;
+          text-transform: uppercase;
+          border: 2px solid #791fd3;
+          color: #000;
+          cursor: pointer;
+          font-weight: bolder;
+          font-family: "Poppins", sans-serif;
         }
+      }
     }
+  }
+
+  .list::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    border: 1px solid #fff;
+  }
+
+  /* Setas */
+  .arrows {
+    width: 90vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25px);
+    display: flex;
+    justify-content: space-between;
+
+    button:nth-child(1) {
+      img {
+        transform: scale(-1);
+      }
+    }
+
+    button {
+      top: 60%;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+
+      img {
+        width: 30px;
+        cursor: pointer;
+      }
+    }
+
+    :hover {
+      background-color: #beff1b;
+    }
+  }
+
+  /*Indicadores*/
+  .indicators {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 25px;
+
+    .number {
+      font-size: 2em;
+    }
+
+    ul {
+      display: flex;
+      gap: 10px;
+
+      li {
+        width: 36px;
+        height: 5px;
+        background-color: #beff1b;
+        border-radius: 5px;
+        transition: 0.5s;
+      }
+
+      .active {
+        background-color: #fff;
+      }
+    }
+  }
 }
